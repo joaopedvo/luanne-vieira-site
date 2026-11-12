@@ -10,6 +10,96 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cambo&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="services.css?v=titulos-menores" />
+  <style>
+    #contato .contact-form {
+      min-width: 0;
+      padding: clamp(20px, 3.4vw, 46px);
+      background: #f8f4ef;
+      border: 1px solid #e8ded3;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px rgb(50 35 22 / 6%);
+    }
+
+    #contato .contact-form :is(input, textarea) {
+      width: 100%;
+      min-width: 0;
+    }
+
+    #contato .contact-form :is(input, textarea):focus-visible {
+      border-bottom-color: #805d45;
+      box-shadow: 0 1px 0 #805d45;
+    }
+
+    #radar .blog-card::before {
+      background-image: url('blog-extintor.webp');
+      background-position: center;
+    }
+
+    #radar .blog-card:nth-child(2)::before {
+      background-image: url('blog-faixa-refletiva.webp');
+    }
+
+    #radar .blog-card:nth-child(3)::before {
+      background-image: url('blog-registro-antt.webp');
+    }
+
+    .practice-areas {
+      background: linear-gradient(120deg, #241f1c, #3e3028);
+      color: #fbf5ee;
+      padding-block: clamp(52px, 6vw, 90px);
+    }
+
+    .practice-areas > h2 {
+      font: 400 clamp(1.9rem, 3.2vw, 3rem)/1.1 Cambo, Georgia, serif;
+      letter-spacing: -.025em;
+      margin: 0 0 28px;
+    }
+
+    .practice-area {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+      gap: clamp(18px, 5vw, 72px);
+      align-items: center;
+      padding: clamp(20px, 3vw, 36px) 0;
+      border-top: 1px solid #dbc0a54d;
+    }
+
+    .practice-area:last-child {
+      border-bottom: 1px solid #dbc0a54d;
+    }
+
+    .practice-area h3 {
+      font: 400 clamp(1.2rem, calc(1.05rem + .45vw), 1.55rem)/1.22 Cambo, Georgia, serif;
+      letter-spacing: -.015em;
+      margin: 0;
+    }
+
+    .practice-area p {
+      color: #e0d1c5;
+      line-height: 1.6;
+      max-width: 55ch;
+      margin: 0;
+    }
+
+    @media (max-width: 680px) {
+      .practice-area {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    }
+
+    main :is(#inicio, #atuacao, #eixos, #servicos, #sobre, #radar, #contato, .faq-section) :is(h1, h2),
+    main #servicos .section-kicker {
+      font-size: clamp(1.85rem, calc(1.35rem + 1.65vw), 3.25rem) !important;
+      line-height: 1.08 !important;
+      text-wrap: balance;
+    }
+
+    #atuacao .intro-layout h2 {
+      max-width: 24ch !important;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -23,27 +113,94 @@
 
   <main>
     <section id="inicio" class="hero section-pad">
-      <div class="hero-copy reveal"><p class="eyebrow">✦ Assessoria técnica e jurídica em transporte de passageiros</p><h1>Decisões regulatórias mais seguras para a sua operação.</h1><div class="hero-actions"><a class="btn btn-white" href="#contato">Falar com Luanne <span>↗</span></a></div></div>
+      <div class="hero-copy reveal"><p class="eyebrow">✦ Atuação perante a ANTT</p><h1>Assessoria técnica e jurídica especializada no transporte rodoviário de passageiros.</h1><div class="hero-actions"><a class="btn btn-white" href="#contato">Fale conosco <span>↗</span></a></div></div>
       <div class="hero-float reveal"><div class="hero-vault"><span class="vault-dot"></span><div><strong>9 anos</strong><small>de experiência no setor</small></div></div></div>
     </section>
 
-    <section class="logo-strip" aria-label="Empresas do setor">
-      <div class="logo-track"><div class="fake-logo"><i>✦</i> VIA NORTE</div><div class="fake-logo"><i>◈</i> ROTA SUL</div><div class="fake-logo"><i>●</i> NEXO MOBILIDADE</div><div class="fake-logo"><i>⌁</i> HORIZONTE BUS</div><div class="fake-logo"><i>△</i> TRAVESSIA</div><div class="fake-logo"><i>✦</i> VIA NORTE</div><div class="fake-logo"><i>◈</i> ROTA SUL</div><div class="fake-logo"><i>●</i> NEXO MOBILIDADE</div><div class="fake-logo"><i>⌁</i> HORIZONTE BUS</div><div class="fake-logo"><i>△</i> TRAVESSIA</div></div>
+    <section class="logo-strip" aria-label="Órgãos de atuação">
+      <div class="logo-track">
+        <div class="fake-logo">ANTT</div>
+        <div class="fake-logo">AGR/GO</div>
+        <div class="fake-logo">DER/MG</div>
+        <div class="fake-logo">SEINFRA/MG</div>
+        <div class="fake-logo">ARTESP</div>
+        <div class="fake-logo">ATR/TO</div>
+        <div class="fake-logo">DER/PE</div>
+        <div class="fake-logo" aria-hidden="true">ANTT</div>
+        <div class="fake-logo" aria-hidden="true">AGR/GO</div>
+        <div class="fake-logo" aria-hidden="true">DER/MG</div>
+        <div class="fake-logo" aria-hidden="true">SEINFRA/MG</div>
+        <div class="fake-logo" aria-hidden="true">ARTESP</div>
+        <div class="fake-logo" aria-hidden="true">ATR/TO</div>
+        <div class="fake-logo" aria-hidden="true">DER/PE</div>
+      </div>
     </section>
 
-    <section id="atuacao" class="section-pad intro-section"><div class="section-kicker">Atuação</div><div class="intro-layout"><h2 class="text-scroll-anim">Soluções técnicas e jurídicas para a operação regulada.</h2><div><p>Da regularização à fiscalização, Luanne Vieira acompanha as principais demandas de empresas de transporte rodoviário intermunicipal e interestadual de passageiros.</p><a class="text-link" href="#servicos">Ver soluções <span>↗</span></a></div></div></section>
+    <section id="atuacao" class="section-pad intro-section"><div class="section-kicker">Atuação</div><div class="intro-layout"><h2 class="text-scroll-anim">Suporte especializado para os desafios regulatórios da sua empresa</h2><div><p>Da regularização de linhas à defesa contra fiscalizações, acompanho cada etapa da operação da sua empresa com soluções estratégicas e atendimento personalizado.</p><a class="text-link" href="#servicos">Ver soluções <span>↗</span></a></div></div></section>
+
+    <section id="eixos" class="section-pad practice-areas" aria-labelledby="eixos-titulo">
+      <h2 id="eixos-titulo">Áreas de atuação</h2>
+      <article class="practice-area">
+        <h3>Regularização &amp; Registros Órgãos Reguladores</h3>
+        <p>Garantia de conformidade cadastral e suporte completo na obtenção de licenças e autorizações operacionais perante órgãos estaduais e federais.</p>
+      </article>
+      <article class="practice-area">
+        <h3>Defesa Administrativa, Recursos &amp; Multas</h3>
+        <p>Gestão estratégica de passivos, contestação de infrações e soluções financeiras para manter a empresa apta a operar.</p>
+      </article>
+      <article class="practice-area">
+        <h3>Gestão Operacional, Linhas &amp; Mercados</h3>
+        <p>Suporte técnico para modificações operacionais, alteração de itinerários e requerimento de novos mercados de atuação.</p>
+      </article>
+      <article class="practice-area">
+        <h3>Atuação Urgente &amp; Contencioso</h3>
+        <p>Acompanhamento jurídico em situações críticas da operação e representação em processos administrativos e judiciais.</p>
+      </article>
+    </section>
 
     <section id="servicos" class="services-section section-pad"><div class="section-kicker">O que fazemos</div><div class="service-grid"><article id="regularizacao" class="service-card featured"><span class="service-number">01</span><h3>Assessoria e consultoria em transporte de passageiros</h3><p>Para empresas que encontram dificuldade para a regularização do transporte terrestre de passageiros e cargas, a fim de atender as normas e legislações pertinentes.</p><a href="#contato">Conversar sobre isso ↗</a></article><article id="cadastro-empresa" class="service-card"><span class="service-number">02</span><h3>Cadastro e renovação cadastral da empresa de transporte de passageiros e cargas</h3><p>Realização de cadastro, autorização, registro e emissão de certificados para o transporte de passageiros e cargas na ANTT, DER/MG, DER/PE, AGR/GO, ARTESP e SEINFRA’s, entre outros.</p><a href="#contato">Solicitar análise ↗</a></article><article id="cadastro-frota" class="service-card"><span class="service-number">03</span><h3>Cadastro e renovação cadastral de frota e motorista</h3><p>Requisição de cadastro e renovação de frota e motorista, pedido de utilização de veículo e motorista de terceiro.</p><a href="#contato">Conhecer solução ↗</a></article><article id="licenca-operacional" class="service-card"><span class="service-number">04</span><h3>Requerimento de licença operacional, mercado, alteração de esquema operacional</h3><p>Solicitação de licença operacional, mercado, alteração de esquema operacional, horários, itinerários, impugnação de pedidos de linhas, mandado de segurança e lay-out de veículo.</p><a href="#contato">Planejar operação ↗</a></article><article id="multas" class="service-card"><span class="service-number">05</span><h3>Defesa e recurso de multas</h3><p>A defesa de autuação e o recurso de infração podem ser realizados quando forem verificados erros ou falhas no auto de infração ou na notificação de autuação.</p><a href="#contato">Solicitar defesa ↗</a></article><article id="processos" class="service-card"><span class="service-number">06</span><h3>Acompanhamento de processos administrativo e judicial</h3><p>Fazemos o acompanhamento administrativo e judicial da empresa.</p><a href="#contato">Acompanhar processo ↗</a></article><article id="parcelamento" class="service-card"><span class="service-number">07</span><h3>Parcelamento de multas</h3><p>Sabemos que as multas podem impedir de emitir algum documento necessário para a operação realizada pela empresa, por isso conseguimos realizar o parcelamento de multas em até 60x.</p><a href="#contato">Avaliar parcelamento ↗</a></article><article id="veiculo-apreendido" class="service-card"><span class="service-number">08</span><h3>Liberação de veículo apreendido e outros</h3><p>Liberação de veículo apreendido por transporte irregular intermunicipal, interestadual, internacional e de veículos financiados pela empresa.</p><a href="#contato">Falar sobre o caso ↗</a></article></div></section>
 
-    <section id="sobre" class="about-section section-pad"><div class="about-visual"><div class="portrait-placeholder"><img src="foto-perfil.jpg" alt="Luanne Vieira"></div><div class="about-tag"><span class="about-tag-mark"></span><div><strong>Luanne Vieira</strong><small>Advocacia &amp; consultoria em transporte</small></div></div></div><div class="about-copy"><div class="section-kicker">Sobre Luanne</div><h2>Conhecimento técnico com presença próxima da decisão.</h2><p>Luanne Vieira é advogada com 9 anos de experiência na área e atuação voltada à regulação do transporte rodoviário intermunicipal e interestadual de passageiros.</p><p>Seu trabalho é direcionado a empresas médias e grandes que precisam lidar com a complexidade dos órgãos reguladores com mais segurança, clareza e planejamento.</p><p>A atuação é pessoal. Cada demanda é analisada de perto, considerando o contexto da empresa, os riscos envolvidos e os objetivos da operação.</p><a class="about-social" href="https://www.linkedin.com/in/luanne-vieira-946540225/" target="_blank" rel="noopener" aria-label="LinkedIn de Luanne Vieira"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 8.1H1.4V22h3.7V8.1ZM3.25 2A2.18 2.18 0 1 0 3.3 6.36 2.18 2.18 0 0 0 3.25 2ZM8.4 8.1H12v1.9h.05c.5-.95 1.72-2.18 3.55-2.18 3.8 0 4.5 2.5 4.5 5.75V22h-3.7v-7.47c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94V22H8.4V8.1Z"/></svg><span>LinkedIn</span><span class="about-social-arrow">↗</span></a></div></section>
+    <section id="sobre" class="about-section section-pad"><div class="about-visual"><div class="portrait-placeholder"><img src="foto-perfil.jpg" alt="Luanne Vieira"></div><div class="about-tag"><span class="about-tag-mark"></span><div><strong>Luanne Vieira</strong><small>Advocacia &amp; consultoria em transporte</small></div></div></div><div class="about-copy"><div class="section-kicker">Sobre mim</div>
+        <h2>Atendimento direto e personalizado para a segurança da sua frota.</h2>
+        <p>Advogada especializada com 9 anos de dedicação exclusiva à regulação do transporte rodoviário de passageiros e cargas.</p>
+        <p>Com atuação focada perante órgãos estaduais e federais (como ANTT, DER e SEINFRA), o trabalho destina-se a empresas que procuram ultrapassar a complexidade burocrática com máxima segurança jurídica, agilidade e planeamento operacional.</p>
+        <p>O atendimento é direto e estratégico. Cada processo ou consulta é acompanhado pessoalmente, garantindo soluções sob medida que protegem a operação, evitam paralisações e asseguram o crescimento do negócio.</p>
+        <a class="about-social" href="https://www.linkedin.com/in/luanne-vieira-946540225/" target="_blank" rel="noopener" aria-label="LinkedIn de Luanne Vieira"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 8.1H1.4V22h3.7V8.1ZM3.25 2A2.18 2.18 0 1 0 3.3 6.36 2.18 2.18 0 0 0 3.25 2ZM8.4 8.1H12v1.9h.05c.5-.95 1.72-2.18 3.55-2.18 3.8 0 4.5 2.5 4.5 5.75V22h-3.7v-7.47c0-1.78-.03-4.07-2.48-4.07-2.48 0-2.86 1.94-2.86 3.94V22H8.4V8.1Z"/></svg><span>LinkedIn</span><span class="about-social-arrow">↗</span></a></div></section>
 
 
     <section id="radar" class="blog-section section-pad"><div class="blog-heading"><div><div class="section-kicker">Radar Rodoviário</div><h2>Informação regulatória para decisões mais seguras.</h2></div><p>Conteúdos práticos sobre ANTT, regularidade, fiscalização e segurança jurídica para empresas de transporte de passageiros.</p></div><div class="blog-grid"><article class="blog-card blog-card-featured"><div class="blog-meta"><span>ANTT</span><span>Fiscalização</span></div><h3>ANTT Passageiros: Extintor de Incêndio Vencido? Risco Certo de Autuação e Interrupção da Viagem!</h3><p>Entenda os riscos de circular com equipamentos vencidos e os impactos para a continuidade da operação.</p><a href="https://luannevieira.com.br/antt-passageiros-extintor-de-incendio-vencido-risco-certo-de-autuacao-e-interrupcao-da-viagem" target="_blank" rel="noopener">Ler artigo <span>↗</span></a></article><article class="blog-card"><div class="blog-meta"><span>ANTT</span><span>Conformidade</span></div><h3>Faixa Refletiva Obrigatória – Regularidade com a ANTT e CONTRAN para Transportadores de Passageiro</h3><p>As exigências de segurança visual e os riscos de autuação para a frota.</p><a href="https://luannevieira.com.br/faixa-refletiva-obrigatoria-regularidade-com-a-antt-e-contran-para-transportadores-de-passageiro" target="_blank" rel="noopener">Ler artigo <span>↗</span></a></article><article class="blog-card"><div class="blog-meta"><span>ANTT</span><span>Regularização</span></div><h3>Obtenha seu TAF/TRIP com Rapidez – Assessoria em Registro ANTT para Transportadores</h3><p>O que os transportadores precisam observar para manter seus registros em conformidade.</p><a href="https://luannevieira.com.br/obtenha-seu-taftrip-com-rapidez-assessoria-em-registro-antt-para-transportadores" target="_blank" rel="noopener">Ler artigo <span>↗</span></a></article></div></section>
 
-    <section class="faq-section section-pad"><div class="faq-heading"><div class="section-kicker">FAQ</div><h2>Perguntas<br>frequentes</h2></div><div class="faq-list"><details open><summary><span class="faq-icon">−</span>Que tipo de empresa a Luanne atende?</summary><p>Empresas médias e grandes do transporte rodoviário intermunicipal e interestadual de passageiros.</p></details><details><summary><span class="faq-icon">+</span>A atuação é somente perante a ANTT?</summary><p>A atuação envolve órgãos reguladores federais e estaduais relacionados ao transporte de passageiros.</p></details><details><summary><span class="faq-icon">+</span>É possível solicitar uma análise antes de contratar?</summary><p>Sim. O primeiro contato serve para compreender o cenário da empresa e a natureza da demanda.</p></details></div></section>
+    <section id="faq" class="faq-section section-pad">
+      <div class="faq-heading">
+        <div class="section-kicker">FAQ</div>
+        <h2>Perguntas<br>frequentes</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary><span class="faq-icon" aria-hidden="true">−</span>Como regularizar uma empresa de transporte de passageiros na ANTT ou órgãos estaduais (DER/SEINFRA)?</summary>
+          <p>A regularização envolve a habilitação jurídica e fiscal da empresa, além da obtenção de registros específicos, como o TAR, LOP e cadastros de frota e motoristas. O processo exige rigor técnico no preenchimento de formulários e atendimento às exigências normativas federais (ANTT) ou estaduais (como DER/MG, SEINFRA, ARTESP, entre outros) para evitar atrasos ou indeferimentos.</p>
+        </details>
+        <details>
+          <summary><span class="faq-icon" aria-hidden="true">+</span>O que fazer ao receber um auto de infração ou multa da ANTT/DER?</summary>
+          <p>Ao receber uma notificação de autuação, é fundamental submeter o documento a uma análise técnica imediata. Muitas multas apresentam falhas formais, erros de preenchimento ou descrições imprecisas por parte do fiscal, o que abre margem para a formulação de defesas prévias e recursos administrativos sólidos capazes de cancelar a penalidade.</p>
+        </details>
+        <details>
+          <summary><span class="faq-icon" aria-hidden="true">+</span>É possível parcelar multas de transporte para liberar documentos da frota?</summary>
+          <p>Sim. Existem mecanismos administrativos que permitem o parcelamento de multas (podendo chegar a até 60 vezes, dependendo da esfera do órgão regulador). Essa medida é essencial para regularizar o passivo da empresa e impedir que débitos pendentes bloqueiem a emissão de licenças, certidões ou a renovação de documentos operacionais essenciais.</p>
+        </details>
+        <details>
+          <summary><span class="faq-icon" aria-hidden="true">+</span>Como proceder em casos de apreensão de veículos por transporte irregular?</summary>
+          <p>A retenção ou apreensão de veículos por suposto transporte irregular (seja intermunicipal, interestadual ou internacional) exige uma atuação jurídica rápida e assertiva. O trabalho consiste na elaboração de medidas urgentes e petições fundamentadas para comprovar a regularidade da operação ou viabilizar a liberação ágil do veículo (incluindo frotas financiadas) junto ao pátio do órgão fiscalizador.</p>
+        </details>
+        <details>
+          <summary><span class="faq-icon" aria-hidden="true">+</span>Como solicitar alterações de esquema operacional, horários e novos mercados?</summary>
+          <p>Qualquer modificação de itinerário, quadro de horários, inclusão de veículos de terceiros ou pleito por novas linhas e mercados precisa seguir rigorosamente as janelas regulatórias e as resoluções vigentes. Uma assessoria especializada garante que os requerimentos sejam protocolados sem falhas documentais, mitigando riscos de impugnações por concorrentes.</p>
+        </details>
+      </div>
+    </section>
 
-    <section id="contato" class="contact-section section-pad"><div class="contact-copy"><div class="section-kicker">Contato</div><h2>Vamos entender o cenário regulatório da sua empresa?</h2><p>Envie uma breve descrição da sua demanda para iniciar uma conversa com Luanne Vieira.</p><a class="contact-mail" href="mailto:contato@luannevieira.com.br">contato@luannevieira.com.br ↗</a></div><form class="contact-form"><label>Nome<input type="text" placeholder="Seu nome"></label><label>Empresa<input type="text" placeholder="Nome da empresa"></label><label>E-mail corporativo<input type="email" placeholder="voce@empresa.com"></label><label>Como podemos ajudar?<textarea placeholder="Descreva brevemente a demanda"></textarea></label><button class="btn btn-primary" type="button">Solicitar contato <span>↗</span></button><small>As informações serão usadas exclusivamente para o contato inicial sobre a demanda.</small></form></section>
+    <section id="contato" class="contact-section section-pad"><div class="contact-copy"><div class="section-kicker">Contato</div><h2>Vamos entender o cenário regulatório da sua empresa?</h2><p>Preencha o formulário ao lado ou envie uma mensagem direta para iniciar um atendimento personalizado.</p><a class="contact-mail" href="mailto:contato@luannevieira.com.br">contato@luannevieira.com.br ↗</a></div><form class="contact-form"><label>Nome<input type="text" placeholder="Seu nome completo"></label><label>Empresa<input type="text" placeholder="Nome da empresa de transporte"></label><label>E-mail corporativo<input type="email" placeholder="seu.email@empresa.com"></label><label>Como podemos ajudar?<textarea placeholder="Descreva brevemente a demanda (ex: regularização de frota, defesa de auto de infração, alteração de linha...)"></textarea></label><button class="btn btn-primary" type="button">Iniciar Atendimento <span>↗</span></button><small>As informações serão usadas exclusivamente para o contato inicial sobre a demanda.</small></form></section>
   </main>
-  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="#inicio"><img class="brand-logo" src="logo-luanne.png" alt="Luanne Vieira"><span class="brand-name">Luanne Vieira<br><small>Advocacia &amp; consultoria em transporte</small></span></a><p>Assessoria técnica e jurídica para empresas do transporte rodoviário de passageiros.</p></div><div class="footer-column"><h3>Navegação</h3><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre Luanne</a><a href="#radar">Radar Rodoviário</a><a href="#contato">Contato</a></div><div class="footer-column"><h3>Atuação</h3><a href="#regularizacao">Regularização e autorizações</a><a href="#fiscalizacao">Fiscalização e defesa</a><a href="#conformidade">Conformidade regulatória</a><a href="#mercados">Mercados e expansão</a></div><div class="footer-column footer-contact"><h3>Contato</h3><p><strong>E-mail:</strong><br><a href="mailto:contato@luannevieira.com.br">contato@luannevieira.com.br</a></p><p><strong>WhatsApp:</strong><br><a href="https://wa.me/5531994504868" target="_blank" rel="noopener">(31) 99450-4868</a></p><a href="https://www.linkedin.com/in/luanne-vieira-946540225/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><div class="footer-bottom"><span>© 2026 Luanne Vieira. Todos os direitos reservados.</span><span>Advocacia &amp; consultoria em transporte</span></div></footer>
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="#inicio"><img class="brand-logo" src="logo-luanne.png" alt="Luanne Vieira"><span class="brand-name">Luanne Vieira<br><small>Advocacia &amp; consultoria em transporte</small></span></a><p>Assessoria Técnica e Jurídica em Transporte de Passageiros</p></div><div class="footer-column"><h3>Navegação</h3><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">Sobre Luanne</a><a href="#radar">Radar Rodoviário</a><a href="#contato">Contato</a></div><div class="footer-column"><h3>Atuação</h3><a href="#regularizacao">Regularização e autorizações</a><a href="#fiscalizacao">Fiscalização e defesa</a><a href="#conformidade">Conformidade regulatória</a><a href="#mercados">Mercados e expansão</a></div><div class="footer-column footer-contact"><h3>Contato</h3><p><strong>E-mail:</strong><br><a href="mailto:contato@luannevieira.com.br">contato@luannevieira.com.br</a></p><p><strong>WhatsApp:</strong><br><a href="https://wa.me/5531994504868" target="_blank" rel="noopener">(31) 99450-4868</a></p><a href="https://www.linkedin.com/in/luanne-vieira-946540225/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div><div class="footer-bottom"><span>© 2026 Luanne Vieira. Todos os direitos reservados.</span><span>Assessoria Técnica e Jurídica em Transporte de Passageiros</span></div></footer>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script><script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script><script src="https://unpkg.com/split-type"></script><script src="script.js"></script>
 </body></html>
